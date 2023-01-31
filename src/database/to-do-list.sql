@@ -23,8 +23,8 @@ CREATE TABLE users_tasks (
 
 INSERT INTO users (id, name, email, password)
 VALUES
-	("f001", "Fulano", "fulano@email.com", "Fulano123*"),
-	("f002", "Beltrana", "beltrana@email.com", "Beltrana00*");
+	("u001", "Fulano", "fulano@email.com", "Fulano123*"),
+	("u002", "Beltrana", "beltrana@email.com", "Beltrana00*");
 
 INSERT INTO tasks (id, title, description)
 VALUES
@@ -35,11 +35,16 @@ VALUES
 
 INSERT INTO users_tasks (user_id, task_id)
 VALUES
-	("f001", "t001"),
-	("f002", "t002"),
-	("f001", "t003"),
-	("f002", "t003");
+	("u001", "t001"),
+	("u002", "t002"),
+	("u001", "t003"),
+	("u002", "t003");
 
 SELECT * FROM users;
 SELECT * FROM tasks;
 SELECT * FROM users_tasks;
+
+DROP TABLE users;
+DROP TABLE tasks;
+
+DROP TABLE users_tasks;
