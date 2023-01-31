@@ -23,8 +23,8 @@ CREATE TABLE users_tasks (
 
 INSERT INTO users (id, name, email, password)
 VALUES
-	("f001", "Fulano", "fulano@email.com", "fulano123"),
-	("f002", "Beltrana", "beltrana@email.com", "beltrana00");
+	("f001", "Fulano", "fulano@email.com", "Fulano123*"),
+	("f002", "Beltrana", "beltrana@email.com", "Beltrana00*");
 
 INSERT INTO tasks (id, title, description)
 VALUES
